@@ -93,8 +93,8 @@ input,textarea{font-size:16px}
 .ws-call{background:linear-gradient(135deg,var(--gold),var(--gold-deep))}
 .ws-map{background:linear-gradient(135deg,#ea4335,#b31412)}
 
-.offers-btn{display:block;margin:16px auto 0;padding:13px 26px;border:none;border-radius:40px;cursor:pointer;
-  font-family:inherit;font-weight:900;font-size:.95rem;color:var(--navy2);
+.offers-btn{display:block;margin:18px auto 0;padding:18px 42px;border:none;border-radius:50px;cursor:pointer;
+  font-family:inherit;font-weight:900;font-size:1.25rem;color:var(--navy2);
   background:linear-gradient(135deg,var(--gold2),var(--gold));box-shadow:0 8px 22px -6px rgba(240,168,24,.7);
   animation:goldPulse 2.4s ease-in-out infinite;display:flex;align-items:center;gap:8px}
 @keyframes goldPulse{0%,100%{transform:scale(1);box-shadow:0 8px 22px -6px rgba(240,168,24,.7)}50%{transform:scale(1.04);box-shadow:0 10px 28px -4px rgba(240,168,24,.9)}}
@@ -368,27 +368,11 @@ button svg,a svg{max-width:26px;max-height:26px}
     <span class="rs"><span>⭐</span><span>⭐</span><span>⭐</span></span>
     <span data-ar="قيّم تجربتك معنا" data-en="Rate your experience">قيّم تجربتك معنا</span>
   </button>
-  <button class="offers-btn stagger" style="--i:11" onclick="openModal('offersModal')">🔥 <span data-ar="شوف العروض" data-en="See Offers">شوف العروض</span> <span class="pill">9</span></button>
+  <button class="offers-btn stagger" style="--i:11" onclick="openModal('offersModal')">🔥 <span data-ar="شوف العروض" data-en="See Offers">شوف العروض</span> <span class="pill">11</span></button>
 </section>
 
 <div class="sec-title stagger" style="--i:12"><span data-ar="تصفّح الأقسام" data-en="Browse Categories">تصفّح الأقسام</span></div>
-<div class="cat-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 14px"><div class="cat stagger" style="--i:13" onclick="goSec('mashawi')"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg>
-          <div class="cn" data-ar="المشاوي" data-en="Grills">المشاوي</div>
-          <div class="cc"><span>22</span> <span data-ar="صنف" data-en="items">صنف</span></div></div><div class="cat stagger" style="--i:14" onclick="goSec('aklat')"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
+<div class="cat-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 14px"><div class="cat stagger" style="--i:14" onclick="goSec('aklat')"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
 <circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
 <g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
 
@@ -458,447 +442,13 @@ button svg,a svg{max-width:26px;max-height:26px}
           <div class="cc"><span>6</span> <span data-ar="صنف" data-en="items">صنف</span></div></div></div>
 
 <div class="tabs-wrap">
-  <div class="tabs"><button class="tab active" data-sec="mashawi" onclick="switchTab('mashawi')"><span data-ar="المشاوي" data-en="Grills">المشاوي</span></button><button class="tab " data-sec="aklat" onclick="switchTab('aklat')"><span data-ar="الأكلات" data-en="Dishes">الأكلات</span></button><button class="tab " data-sec="burger" onclick="switchTab('burger')"><span data-ar="البرجر" data-en="Burger">البرجر</span></button><button class="tab " data-sec="pizza" onclick="switchTab('pizza')"><span data-ar="البيتزا" data-en="Pizza">البيتزا</span></button><button class="tab " data-sec="finger" onclick="switchTab('finger')"><span data-ar="الفنكر" data-en="Fries">الفنكر</span></button><button class="tab " data-sec="drinks" onclick="switchTab('drinks')"><span data-ar="المشروبات" data-en="Drinks">المشروبات</span></button></div>
+  <div class="tabs"><button class="tab active" data-sec="aklat" onclick="switchTab('aklat')"><span data-ar="الأكلات" data-en="Dishes">الأكلات</span></button><button class="tab " data-sec="burger" onclick="switchTab('burger')"><span data-ar="البرجر" data-en="Burger">البرجر</span></button><button class="tab " data-sec="pizza" onclick="switchTab('pizza')"><span data-ar="البيتزا" data-en="Pizza">البيتزا</span></button><button class="tab " data-sec="finger" onclick="switchTab('finger')"><span data-ar="الفنكر" data-en="Fries">الفنكر</span></button><button class="tab " data-sec="drinks" onclick="switchTab('drinks')"><span data-ar="المشروبات" data-en="Drinks">المشروبات</span></button></div>
   <div class="search-row" id="searchRow">
     <input id="searchInput" type="text" oninput="doSearch(this.value)" data-ar-ph="ابحث عن صنف..." data-en-ph="Search..." placeholder="ابحث عن صنف...">
   </div>
 </div>
 
-<main><div class="section active" id="sec-mashawi">
-          <div class="sec-head"><h2><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg><span data-ar="المشاوي" data-en="Grills">المشاوي</span></h2></div>
-          <div class="items" id="items-mashawi"><div class="card" data-name="دجاج شوي ذبح">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(0,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="دجاج شوي ذبح" data-en="دجاج شوي ذبح">دجاج شوي ذبح</div>
-          <div class="pr"><span class="cnt-price" data-price="13000">13,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نصف دجاجة ذبح">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(1,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نصف دجاجة ذبح" data-en="نصف دجاجة ذبح">نصف دجاجة ذبح</div>
-          <div class="pr"><span class="cnt-price" data-price="6500">6,500</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="كيلو كباب لحم">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(2,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="كيلو كباب لحم" data-en="كيلو كباب لحم">كيلو كباب لحم</div>
-          <div class="pr"><span class="cnt-price" data-price="22000">22,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نصف كيلو كباب لحم">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(3,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نصف كيلو كباب لحم" data-en="نصف كيلو كباب لحم">نصف كيلو كباب لحم</div>
-          <div class="pr"><span class="cnt-price" data-price="11000">11,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نفر كباب لحم">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(4,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نفر كباب لحم" data-en="نفر كباب لحم">نفر كباب لحم</div>
-          <div class="pr"><span class="cnt-price" data-price="7000">7,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نصف نفر كباب لحم">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(5,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نصف نفر كباب لحم" data-en="نصف نفر كباب لحم">نصف نفر كباب لحم</div>
-          <div class="pr"><span class="cnt-price" data-price="5000">5,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="كيلو كباب دجاج">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(6,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="كيلو كباب دجاج" data-en="كيلو كباب دجاج">كيلو كباب دجاج</div>
-          <div class="pr"><span class="cnt-price" data-price="18000">18,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نصف كيلو كباب دجاج">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(7,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نصف كيلو كباب دجاج" data-en="نصف كيلو كباب دجاج">نصف كيلو كباب دجاج</div>
-          <div class="pr"><span class="cnt-price" data-price="9000">9,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نفر كباب دجاج">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(8,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نفر كباب دجاج" data-en="نفر كباب دجاج">نفر كباب دجاج</div>
-          <div class="pr"><span class="cnt-price" data-price="6000">6,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نصف نفر كباب دجاج">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(9,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نصف نفر كباب دجاج" data-en="نصف نفر كباب دجاج">نصف نفر كباب دجاج</div>
-          <div class="pr"><span class="cnt-price" data-price="4000">4,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="كيلو كباب مشكل">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(10,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="كيلو كباب مشكل" data-en="كيلو كباب مشكل">كيلو كباب مشكل</div>
-          <div class="pr"><span class="cnt-price" data-price="6000">6,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نصف كيلو كباب مشكل">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(11,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نصف كيلو كباب مشكل" data-en="نصف كيلو كباب مشكل">نصف كيلو كباب مشكل</div>
-          <div class="pr"><span class="cnt-price" data-price="4000">4,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="كيلو تكه لحم">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(12,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="كيلو تكه لحم" data-en="كيلو تكه لحم">كيلو تكه لحم</div>
-          <div class="pr"><span class="cnt-price" data-price="25000">25,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نصف كيلو تكه لحم">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(13,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نصف كيلو تكه لحم" data-en="نصف كيلو تكه لحم">نصف كيلو تكه لحم</div>
-          <div class="pr"><span class="cnt-price" data-price="11000">11,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نفر تكه لحم">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(14,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نفر تكه لحم" data-en="نفر تكه لحم">نفر تكه لحم</div>
-          <div class="pr"><span class="cnt-price" data-price="7000">7,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نصف نفر تكه لحم">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(15,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نصف نفر تكه لحم" data-en="نصف نفر تكه لحم">نصف نفر تكه لحم</div>
-          <div class="pr"><span class="cnt-price" data-price="5000">5,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="كيلو تكه دجاج">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(16,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="كيلو تكه دجاج" data-en="كيلو تكه دجاج">كيلو تكه دجاج</div>
-          <div class="pr"><span class="cnt-price" data-price="18000">18,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نصف كيلو تكه دجاج">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(17,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نصف كيلو تكه دجاج" data-en="نصف كيلو تكه دجاج">نصف كيلو تكه دجاج</div>
-          <div class="pr"><span class="cnt-price" data-price="9000">9,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نفر تكه دجاج">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(18,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نفر تكه دجاج" data-en="نفر تكه دجاج">نفر تكه دجاج</div>
-          <div class="pr"><span class="cnt-price" data-price="6000">6,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="كيلو تكه مشكل">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(19,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="كيلو تكه مشكل" data-en="كيلو تكه مشكل">كيلو تكه مشكل</div>
-          <div class="pr"><span class="cnt-price" data-price="20000">20,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نصف كيلو تكه مشكل">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(20,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نصف كيلو تكه مشكل" data-en="نصف كيلو تكه مشكل">نصف كيلو تكه مشكل</div>
-          <div class="pr"><span class="cnt-price" data-price="10000">10,000</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="نفر تمن">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<line x1="30" y1="30" x2="70" y2="30" stroke-width="1.8"/>
-<line x1="34" y1="26" x2="34" y2="34" stroke-width="1.5"/>
-<path d="M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<line x1="30" y1="46" x2="70" y2="46" stroke-width="1.8"/>
-<path d="M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z"/>
-<path d="M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10" stroke-width="1.5"/>
-<ellipse cx="50" cy="72" rx="24" ry="4"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(21,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="نفر تمن" data-en="نفر تمن">نفر تمن</div>
-          <div class="pr"><span class="cnt-price" data-price="3000">3,000</span> <span class="cur">د.ع</span></div></div>
-        </div></div></div><div class="section " id="sec-aklat">
+<main><div class="section active" id="sec-aklat">
           <div class="sec-head"><h2><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
 <circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
 <g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
@@ -950,7 +500,7 @@ button svg,a svg{max-width:26px;max-height:26px}
 </g></svg></div>
           <button class="add" onclick="addToCart(24,event)">+</button>
           <div class="bot"><div class="nm" data-ar="صاج فلافل" data-en="صاج فلافل">صاج فلافل</div>
-          <div class="pr"><span class="cnt-price" data-price="1500">1,500</span> <span class="cur">د.ع</span></div></div>
+          <div class="pr"><span class="cnt-price" data-price="2000">2,000</span> <span class="cur">د.ع</span></div></div>
         </div><div class="card" data-name="صاج ايطالي">
           <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
 <circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
@@ -964,7 +514,7 @@ button svg,a svg{max-width:26px;max-height:26px}
 </g></svg></div>
           <button class="add" onclick="addToCart(25,event)">+</button>
           <div class="bot"><div class="nm" data-ar="صاج ايطالي" data-en="صاج ايطالي">صاج ايطالي</div>
-          <div class="pr"><span class="cnt-price" data-price="4000">4,000</span> <span class="cur">د.ع</span></div></div>
+          <div class="pr"><span class="cnt-price" data-price="5000">5,000</span> <span class="cur">د.ع</span></div></div>
         </div><div class="card" data-name="زنجر">
           <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
 <circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
@@ -1153,7 +703,7 @@ button svg,a svg{max-width:26px;max-height:26px}
 </g></svg></div>
           <button class="add" onclick="addToCart(36,event)">+</button>
           <div class="bot"><div class="nm" data-ar="وجبة برجر لحم" data-en="وجبة برجر لحم">وجبة برجر لحم</div>
-          <div class="pr"><span class="cnt-price" data-price="3500">3,500</span> <span class="cur">د.ع</span></div></div>
+          <div class="pr"><span class="cnt-price" data-price="4000">4,000</span> <span class="cur">د.ع</span></div></div>
         </div><div class="card" data-name="وجبة برجر دجاج">
           <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
 <circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
@@ -1171,7 +721,7 @@ button svg,a svg{max-width:26px;max-height:26px}
 </g></svg></div>
           <button class="add" onclick="addToCart(37,event)">+</button>
           <div class="bot"><div class="nm" data-ar="وجبة برجر دجاج" data-en="وجبة برجر دجاج">وجبة برجر دجاج</div>
-          <div class="pr"><span class="cnt-price" data-price="4000">4,000</span> <span class="cur">د.ع</span></div></div>
+          <div class="pr"><span class="cnt-price" data-price="4500">4,500</span> <span class="cur">د.ع</span></div></div>
         </div><div class="card" data-name="وجبة صاج دجاج">
           <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
 <circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
@@ -1207,7 +757,7 @@ button svg,a svg{max-width:26px;max-height:26px}
 </g></svg></div>
           <button class="add" onclick="addToCart(39,event)">+</button>
           <div class="bot"><div class="nm" data-ar="وجبة صاج ايطالي" data-en="وجبة صاج ايطالي">وجبة صاج ايطالي</div>
-          <div class="pr"><span class="cnt-price" data-price="5500">5,500</span> <span class="cur">د.ع</span></div></div>
+          <div class="pr"><span class="cnt-price" data-price="6500">6,500</span> <span class="cur">د.ع</span></div></div>
         </div></div></div><div class="section " id="sec-pizza">
           <div class="sec-head"><h2><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
 <circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
@@ -1425,7 +975,7 @@ button svg,a svg{max-width:26px;max-height:26px}
 </g></svg></div>
           <button class="add" onclick="addToCart(51,event)">+</button>
           <div class="bot"><div class="nm" data-ar="بيتزا خضار عائلي" data-en="بيتزا خضار عائلي">بيتزا خضار عائلي</div>
-          <div class="pr"><span class="cnt-price" data-price="9000">9,000</span> <span class="cur">د.ع</span></div></div>
+          <div class="pr"><span class="cnt-price" data-price="10000">10,000</span> <span class="cur">د.ع</span></div></div>
         </div><div class="card" data-name="بيتزا مشكل صغير">
           <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
 <circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
@@ -1584,24 +1134,7 @@ button svg,a svg{max-width:26px;max-height:26px}
 <circle cx="48" cy="64" r="1.5" fill="url(#goldGrad)"/>
 
 </g></svg><span data-ar="المشروبات" data-en="Drinks">المشروبات</span></h2></div>
-          <div class="items" id="items-drinks"><div class="card" data-name="بيبسي دبل">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<path d="M36 36 h28 l-3 34 a4 4 0 0 1 -4 4 h-14 a4 4 0 0 1 -4 -4 z"/>
-<ellipse cx="50" cy="36" rx="14" ry="3.5"/>
-<line x1="55" y1="34" x2="60" y2="20" stroke-width="2"/>
-<path d="M40 48 h20" stroke-width="1.5" stroke-dasharray="2 3"/>
-<circle cx="45" cy="56" r="1.8" fill="url(#goldGrad)"/>
-<circle cx="55" cy="60" r="1.8" fill="url(#goldGrad)"/>
-<circle cx="48" cy="64" r="1.5" fill="url(#goldGrad)"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(60,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="بيبسي دبل" data-en="بيبسي دبل">بيبسي دبل</div>
-          <div class="pr"><span class="cnt-price" data-price="1500">1,500</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="بيبسي">
+          <div class="items" id="items-drinks"><div class="card" data-name="بيبسي">
           <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
 <circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
 <g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
@@ -1618,23 +1151,6 @@ button svg,a svg{max-width:26px;max-height:26px}
           <button class="add" onclick="addToCart(61,event)">+</button>
           <div class="bot"><div class="nm" data-ar="بيبسي" data-en="بيبسي">بيبسي</div>
           <div class="pr"><span class="cnt-price" data-price="500">500</span> <span class="cur">د.ع</span></div></div>
-        </div><div class="card" data-name="سفن دبل">
-          <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
-<circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
-<g fill="none" stroke="url(#goldGrad)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-
-<path d="M36 36 h28 l-3 34 a4 4 0 0 1 -4 4 h-14 a4 4 0 0 1 -4 -4 z"/>
-<ellipse cx="50" cy="36" rx="14" ry="3.5"/>
-<line x1="55" y1="34" x2="60" y2="20" stroke-width="2"/>
-<path d="M40 48 h20" stroke-width="1.5" stroke-dasharray="2 3"/>
-<circle cx="45" cy="56" r="1.8" fill="url(#goldGrad)"/>
-<circle cx="55" cy="60" r="1.8" fill="url(#goldGrad)"/>
-<circle cx="48" cy="64" r="1.5" fill="url(#goldGrad)"/>
-
-</g></svg></div>
-          <button class="add" onclick="addToCart(62,event)">+</button>
-          <div class="bot"><div class="nm" data-ar="سفن دبل" data-en="سفن دبل">سفن دبل</div>
-          <div class="pr"><span class="cnt-price" data-price="1500">1,500</span> <span class="cur">د.ع</span></div></div>
         </div><div class="card" data-name="سفن">
           <div class="top"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="cat-svg">
 <circle cx="50" cy="50" r="48" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
@@ -1735,58 +1251,70 @@ button svg,a svg{max-width:26px;max-height:26px}
   <div class="sheet"><div class="grip"></div><div class="sheet-h"><h3 data-ar="🔥 عروض مطعم العافية" data-en="🔥 Al-Afia Offers">🔥 عروض مطعم العافية</h3>
     <button class="x" onclick="closeModal('offersModal')">×</button></div><div class="offer"><span class="oe">🔥</span><div class="oc">
           <span class="otag" data-ar="عرض" data-en="Offer">عرض</span>
-          <div class="on" data-ar="عرض البرجر دجاج" data-en="عرض البرجر دجاج">عرض البرجر دجاج</div>
-          <div class="od" data-ar="5 برجر دجاج + طبق فنكر + بطل ببسي عائلي + مقبلات + توصيل مجاني" data-en="5 برجر دجاج + طبق فنكر + بطل ببسي عائلي + مقبلات + توصيل مجاني">5 برجر دجاج + طبق فنكر + بطل ببسي عائلي + مقبلات + توصيل مجاني</div>
-          <div class="obot"><div class="op">12,000 <span class="cur">د.ع</span></div>
+          <div class="on" data-ar="7 لفات كص دجاج" data-en="7 لفات كص دجاج">7 لفات كص دجاج</div>
+          <div class="od" data-ar="7 لفات كص دجاج + بطل ببسي عائلي + التوصيل مجاني" data-en="7 لفات كص دجاج + بطل ببسي عائلي + التوصيل مجاني">7 لفات كص دجاج + بطل ببسي عائلي + التوصيل مجاني</div>
+          <div class="obot"><div class="op">15,000 <span class="cur">د.ع</span></div>
           <button class="oadd" onclick="addOffer('o0',event)" data-ar="أضف للسلة" data-en="Add">أضف للسلة</button></div>
         </div></div><div class="offer"><span class="oe">🔥</span><div class="oc">
           <span class="otag" data-ar="عرض" data-en="Offer">عرض</span>
-          <div class="on" data-ar="عرض الصاج" data-en="عرض الصاج">عرض الصاج</div>
-          <div class="od" data-ar="5 صاج دجاج + طبق فنكر + بطل ببسي عائلي + مقبلات + توصيل مجاني" data-en="5 صاج دجاج + طبق فنكر + بطل ببسي عائلي + مقبلات + توصيل مجاني">5 صاج دجاج + طبق فنكر + بطل ببسي عائلي + مقبلات + توصيل مجاني</div>
-          <div class="obot"><div class="op">12,000 <span class="cur">د.ع</span></div>
+          <div class="on" data-ar="25 قطعة صاج دجاج" data-en="25 قطعة صاج دجاج">25 قطعة صاج دجاج</div>
+          <div class="od" data-ar="25 قطعة صاج دجاج مع طبق فنكر + بطل ببسي عائلي + مقبلات + التوصيل مجاني" data-en="25 قطعة صاج دجاج مع طبق فنكر + بطل ببسي عائلي + مقبلات + التوصيل مجاني">25 قطعة صاج دجاج مع طبق فنكر + بطل ببسي عائلي + مقبلات + التوصيل مجاني</div>
+          <div class="obot"><div class="op">15,000 <span class="cur">د.ع</span></div>
           <button class="oadd" onclick="addOffer('o1',event)" data-ar="أضف للسلة" data-en="Add">أضف للسلة</button></div>
         </div></div><div class="offer"><span class="oe">🔥</span><div class="oc">
           <span class="otag" data-ar="عرض" data-en="Offer">عرض</span>
-          <div class="on" data-ar="عرض الشاورما" data-en="عرض الشاورما">عرض الشاورما</div>
-          <div class="od" data-ar="7 شاورما دجاج + بطل ببسي عائلي + توصيل مجاني" data-en="7 شاورما دجاج + بطل ببسي عائلي + توصيل مجاني">7 شاورما دجاج + بطل ببسي عائلي + توصيل مجاني</div>
-          <div class="obot"><div class="op">13,000 <span class="cur">د.ع</span></div>
+          <div class="on" data-ar="5 صاج دجاج + بيتزا صغير + فنكر" data-en="5 صاج دجاج + بيتزا صغير + فنكر">5 صاج دجاج + بيتزا صغير + فنكر</div>
+          <div class="od" data-ar="5 صاج دجاج + بيتزا صغير + طبق فنكر + ببسي عائلي مجاني + مقبلات مجانية + التوصيل مجاني" data-en="5 صاج دجاج + بيتزا صغير + طبق فنكر + ببسي عائلي مجاني + مقبلات مجانية + التوصيل مجاني">5 صاج دجاج + بيتزا صغير + طبق فنكر + ببسي عائلي مجاني + مقبلات مجانية + التوصيل مجاني</div>
+          <div class="obot"><div class="op">19,000 <span class="cur">د.ع</span></div>
           <button class="oadd" onclick="addOffer('o2',event)" data-ar="أضف للسلة" data-en="Add">أضف للسلة</button></div>
         </div></div><div class="offer"><span class="oe">🔥</span><div class="oc">
           <span class="otag" data-ar="عرض" data-en="Offer">عرض</span>
-          <div class="on" data-ar="عرض الريزو الأصيل" data-en="عرض الريزو الأصيل">عرض الريزو الأصيل</div>
-          <div class="od" data-ar="ريزو مقرمش + ريزو مكس + ريزو شاورما + بطل ببسي عائلي + توصيل مجاني" data-en="ريزو مقرمش + ريزو مكس + ريزو شاورما + بطل ببسي عائلي + توصيل مجاني">ريزو مقرمش + ريزو مكس + ريزو شاورما + بطل ببسي عائلي + توصيل مجاني</div>
-          <div class="obot"><div class="op">14,000 <span class="cur">د.ع</span></div>
+          <div class="on" data-ar="10 لفات فلافل" data-en="10 لفات فلافل">10 لفات فلافل</div>
+          <div class="od" data-ar="10 لفات فلافل + بطل ببسي عائلي + التوصيل مجاني" data-en="10 لفات فلافل + بطل ببسي عائلي + التوصيل مجاني">10 لفات فلافل + بطل ببسي عائلي + التوصيل مجاني</div>
+          <div class="obot"><div class="op">10,000 <span class="cur">د.ع</span></div>
           <button class="oadd" onclick="addOffer('o3',event)" data-ar="أضف للسلة" data-en="Add">أضف للسلة</button></div>
         </div></div><div class="offer"><span class="oe">🔥</span><div class="oc">
           <span class="otag" data-ar="عرض" data-en="Offer">عرض</span>
-          <div class="on" data-ar="عرض الفلافل" data-en="عرض الفلافل">عرض الفلافل</div>
-          <div class="od" data-ar="10 فلافل + بطل ببسي عائلي + مقبلات + توصيل مجاني" data-en="10 فلافل + بطل ببسي عائلي + مقبلات + توصيل مجاني">10 فلافل + بطل ببسي عائلي + مقبلات + توصيل مجاني</div>
-          <div class="obot"><div class="op">10,000 <span class="cur">د.ع</span></div>
+          <div class="on" data-ar="5 برجر لحم + طبق فنكر" data-en="5 برجر لحم + طبق فنكر">5 برجر لحم + طبق فنكر</div>
+          <div class="od" data-ar="5 برجر لحم + طبق فنكر + ببسي عائلي + التوصيل مجاني" data-en="5 برجر لحم + طبق فنكر + ببسي عائلي + التوصيل مجاني">5 برجر لحم + طبق فنكر + ببسي عائلي + التوصيل مجاني</div>
+          <div class="obot"><div class="op">17,000 <span class="cur">د.ع</span></div>
           <button class="oadd" onclick="addOffer('o4',event)" data-ar="أضف للسلة" data-en="Add">أضف للسلة</button></div>
         </div></div><div class="offer"><span class="oe">🔥</span><div class="oc">
           <span class="otag" data-ar="عرض" data-en="Offer">عرض</span>
-          <div class="on" data-ar="عرض البيتزا" data-en="عرض البيتزا">عرض البيتزا</div>
-          <div class="od" data-ar="3 بيتزا صغير + بطل ببسي عائلي + مقبلات + توصيل مجاني" data-en="3 بيتزا صغير + بطل ببسي عائلي + مقبلات + توصيل مجاني">3 بيتزا صغير + بطل ببسي عائلي + مقبلات + توصيل مجاني</div>
-          <div class="obot"><div class="op">14,000 <span class="cur">د.ع</span></div>
+          <div class="on" data-ar="3 بيتزا دجاج + طبق فنكر" data-en="3 بيتزا دجاج + طبق فنكر">3 بيتزا دجاج + طبق فنكر</div>
+          <div class="od" data-ar="3 بيتزا دجاج + طبق فنكر + مقبلات + بطل ببسي عائلي + التوصيل مجاني" data-en="3 بيتزا دجاج + طبق فنكر + مقبلات + بطل ببسي عائلي + التوصيل مجاني">3 بيتزا دجاج + طبق فنكر + مقبلات + بطل ببسي عائلي + التوصيل مجاني</div>
+          <div class="obot"><div class="op">17,000 <span class="cur">د.ع</span></div>
           <button class="oadd" onclick="addOffer('o5',event)" data-ar="أضف للسلة" data-en="Add">أضف للسلة</button></div>
         </div></div><div class="offer"><span class="oe">🔥</span><div class="oc">
           <span class="otag" data-ar="عرض" data-en="Offer">عرض</span>
-          <div class="on" data-ar="العرض العائلي - صاج" data-en="العرض العائلي - صاج">العرض العائلي - صاج</div>
-          <div class="od" data-ar="4 صاج دجاج + برجر لحم + برجر دجاج + طبق فنكر + بطل ببسي عائلي + توصيل مجاني" data-en="4 صاج دجاج + برجر لحم + برجر دجاج + طبق فنكر + بطل ببسي عائلي + توصيل مجاني">4 صاج دجاج + برجر لحم + برجر دجاج + طبق فنكر + بطل ببسي عائلي + توصيل مجاني</div>
-          <div class="obot"><div class="op">15,000 <span class="cur">د.ع</span></div>
+          <div class="on" data-ar="ريزو مقرمش + ريزو مكس + برجر + صاج" data-en="ريزو مقرمش + ريزو مكس + برجر + صاج">ريزو مقرمش + ريزو مكس + برجر + صاج</div>
+          <div class="od" data-ar="ريزو مقرمش + ريزو مكس + برجر لحم + صاج دجاج مع بطل ببسي عائلي + مقبلات + طبق فنكر + التوصيل مجاني" data-en="ريزو مقرمش + ريزو مكس + برجر لحم + صاج دجاج مع بطل ببسي عائلي + مقبلات + طبق فنكر + التوصيل مجاني">ريزو مقرمش + ريزو مكس + برجر لحم + صاج دجاج مع بطل ببسي عائلي + مقبلات + طبق فنكر + التوصيل مجاني</div>
+          <div class="obot"><div class="op">16,000 <span class="cur">د.ع</span></div>
           <button class="oadd" onclick="addOffer('o6',event)" data-ar="أضف للسلة" data-en="Add">أضف للسلة</button></div>
         </div></div><div class="offer"><span class="oe">🔥</span><div class="oc">
           <span class="otag" data-ar="عرض" data-en="Offer">عرض</span>
-          <div class="on" data-ar="العرض العائلي - بيتزا" data-en="العرض العائلي - بيتزا">العرض العائلي - بيتزا</div>
-          <div class="od" data-ar="1 بيتزا صغير + 2 برجر لحم + 2 برجر دجاج + بطل ببسي عائلي + توصيل مجاني" data-en="1 بيتزا صغير + 2 برجر لحم + 2 برجر دجاج + بطل ببسي عائلي + توصيل مجاني">1 بيتزا صغير + 2 برجر لحم + 2 برجر دجاج + بطل ببسي عائلي + توصيل مجاني</div>
-          <div class="obot"><div class="op">15,000 <span class="cur">د.ع</span></div>
+          <div class="on" data-ar="5 برجر لحم + 3 دجاج + طبق فنكر" data-en="5 برجر لحم + 3 دجاج + طبق فنكر">5 برجر لحم + 3 دجاج + طبق فنكر</div>
+          <div class="od" data-ar="5 برجر لحم + 3 دجاج + طبق فنكر + ببسي عائلي مجاني + التوصيل مجاني" data-en="5 برجر لحم + 3 دجاج + طبق فنكر + ببسي عائلي مجاني + التوصيل مجاني">5 برجر لحم + 3 دجاج + طبق فنكر + ببسي عائلي مجاني + التوصيل مجاني</div>
+          <div class="obot"><div class="op">25,000 <span class="cur">د.ع</span></div>
           <button class="oadd" onclick="addOffer('o7',event)" data-ar="أضف للسلة" data-en="Add">أضف للسلة</button></div>
         </div></div><div class="offer"><span class="oe">🔥</span><div class="oc">
           <span class="otag" data-ar="عرض" data-en="Offer">عرض</span>
-          <div class="on" data-ar="العرض الكبير" data-en="العرض الكبير">العرض الكبير</div>
-          <div class="od" data-ar="1 بيتزا عائلي + برجر لحم + برجر دجاج + 2 كص دجاج + 4 فلافل + طبق فنكر + بطل ببسي عائلي + توصيل مجاني" data-en="1 بيتزا عائلي + برجر لحم + برجر دجاج + 2 كص دجاج + 4 فلافل + طبق فنكر + بطل ببسي عائلي + توصيل مجاني">1 بيتزا عائلي + برجر لحم + برجر دجاج + 2 كص دجاج + 4 فلافل + طبق فنكر + بطل ببسي عائلي + توصيل مجاني</div>
-          <div class="obot"><div class="op">25,000 <span class="cur">د.ع</span></div>
+          <div class="on" data-ar="15 قطعة صاج ايطالي" data-en="15 قطعة صاج ايطالي">15 قطعة صاج ايطالي</div>
+          <div class="od" data-ar="15 قطعة صاج ايطالي + طبق فنكر + بطل ببسي عائلي + التوصيل مجاني" data-en="15 قطعة صاج ايطالي + طبق فنكر + بطل ببسي عائلي + التوصيل مجاني">15 قطعة صاج ايطالي + طبق فنكر + بطل ببسي عائلي + التوصيل مجاني</div>
+          <div class="obot"><div class="op">18,000 <span class="cur">د.ع</span></div>
           <button class="oadd" onclick="addOffer('o8',event)" data-ar="أضف للسلة" data-en="Add">أضف للسلة</button></div>
+        </div></div><div class="offer"><span class="oe">🔥</span><div class="oc">
+          <span class="otag" data-ar="عرض" data-en="Offer">عرض</span>
+          <div class="on" data-ar="2 برجر لحم + 2 صاج دجاج + بيتزا صغير" data-en="2 برجر لحم + 2 صاج دجاج + بيتزا صغير">2 برجر لحم + 2 صاج دجاج + بيتزا صغير</div>
+          <div class="od" data-ar="2 برجر لحم + 2 صاج دجاج مع بيتزا صغير + بطل ببسي عائلي مجاني + مقبلات مجانية + التوصيل مجاني" data-en="2 برجر لحم + 2 صاج دجاج مع بيتزا صغير + بطل ببسي عائلي مجاني + مقبلات مجانية + التوصيل مجاني">2 برجر لحم + 2 صاج دجاج مع بيتزا صغير + بطل ببسي عائلي مجاني + مقبلات مجانية + التوصيل مجاني</div>
+          <div class="obot"><div class="op">15,000 <span class="cur">د.ع</span></div>
+          <button class="oadd" onclick="addOffer('o9',event)" data-ar="أضف للسلة" data-en="Add">أضف للسلة</button></div>
+        </div></div><div class="offer"><span class="oe">🔥</span><div class="oc">
+          <span class="otag" data-ar="عرض" data-en="Offer">عرض</span>
+          <div class="on" data-ar="7 لفات كص دجاج + ببسي عائلي" data-en="7 لفات كص دجاج + ببسي عائلي">7 لفات كص دجاج + ببسي عائلي</div>
+          <div class="od" data-ar="7 لفات كص دجاج + بطل ببسي عائلي + التوصيل مجاني" data-en="7 لفات كص دجاج + بطل ببسي عائلي + التوصيل مجاني">7 لفات كص دجاج + بطل ببسي عائلي + التوصيل مجاني</div>
+          <div class="obot"><div class="op">15,000 <span class="cur">د.ع</span></div>
+          <button class="oadd" onclick="addOffer('o10',event)" data-ar="أضف للسلة" data-en="Add">أضف للسلة</button></div>
         </div></div><div style="height:20px"></div></div></div>
 
 <div class="modal" id="socialModal"><div class="ov" onclick="closeModal('socialModal')"></div>
@@ -1823,7 +1351,7 @@ button svg,a svg{max-width:26px;max-height:26px}
   </div></div>
 
 <script>
-const ITEMS=[{"id": 0, "sec": "mashawi", "ar": "دجاج شوي ذبح", "en": "دجاج شوي ذبح", "price": 13000, "badge": "", "icon": "grill"}, {"id": 1, "sec": "mashawi", "ar": "نصف دجاجة ذبح", "en": "نصف دجاجة ذبح", "price": 6500, "badge": "", "icon": "grill"}, {"id": 2, "sec": "mashawi", "ar": "كيلو كباب لحم", "en": "كيلو كباب لحم", "price": 22000, "badge": "", "icon": "grill"}, {"id": 3, "sec": "mashawi", "ar": "نصف كيلو كباب لحم", "en": "نصف كيلو كباب لحم", "price": 11000, "badge": "", "icon": "grill"}, {"id": 4, "sec": "mashawi", "ar": "نفر كباب لحم", "en": "نفر كباب لحم", "price": 7000, "badge": "", "icon": "grill"}, {"id": 5, "sec": "mashawi", "ar": "نصف نفر كباب لحم", "en": "نصف نفر كباب لحم", "price": 5000, "badge": "", "icon": "grill"}, {"id": 6, "sec": "mashawi", "ar": "كيلو كباب دجاج", "en": "كيلو كباب دجاج", "price": 18000, "badge": "", "icon": "grill"}, {"id": 7, "sec": "mashawi", "ar": "نصف كيلو كباب دجاج", "en": "نصف كيلو كباب دجاج", "price": 9000, "badge": "", "icon": "grill"}, {"id": 8, "sec": "mashawi", "ar": "نفر كباب دجاج", "en": "نفر كباب دجاج", "price": 6000, "badge": "", "icon": "grill"}, {"id": 9, "sec": "mashawi", "ar": "نصف نفر كباب دجاج", "en": "نصف نفر كباب دجاج", "price": 4000, "badge": "", "icon": "grill"}, {"id": 10, "sec": "mashawi", "ar": "كيلو كباب مشكل", "en": "كيلو كباب مشكل", "price": 6000, "badge": "", "icon": "grill"}, {"id": 11, "sec": "mashawi", "ar": "نصف كيلو كباب مشكل", "en": "نصف كيلو كباب مشكل", "price": 4000, "badge": "", "icon": "grill"}, {"id": 12, "sec": "mashawi", "ar": "كيلو تكه لحم", "en": "كيلو تكه لحم", "price": 25000, "badge": "", "icon": "grill"}, {"id": 13, "sec": "mashawi", "ar": "نصف كيلو تكه لحم", "en": "نصف كيلو تكه لحم", "price": 11000, "badge": "", "icon": "grill"}, {"id": 14, "sec": "mashawi", "ar": "نفر تكه لحم", "en": "نفر تكه لحم", "price": 7000, "badge": "", "icon": "grill"}, {"id": 15, "sec": "mashawi", "ar": "نصف نفر تكه لحم", "en": "نصف نفر تكه لحم", "price": 5000, "badge": "", "icon": "grill"}, {"id": 16, "sec": "mashawi", "ar": "كيلو تكه دجاج", "en": "كيلو تكه دجاج", "price": 18000, "badge": "", "icon": "grill"}, {"id": 17, "sec": "mashawi", "ar": "نصف كيلو تكه دجاج", "en": "نصف كيلو تكه دجاج", "price": 9000, "badge": "", "icon": "grill"}, {"id": 18, "sec": "mashawi", "ar": "نفر تكه دجاج", "en": "نفر تكه دجاج", "price": 6000, "badge": "", "icon": "grill"}, {"id": 19, "sec": "mashawi", "ar": "كيلو تكه مشكل", "en": "كيلو تكه مشكل", "price": 20000, "badge": "", "icon": "grill"}, {"id": 20, "sec": "mashawi", "ar": "نصف كيلو تكه مشكل", "en": "نصف كيلو تكه مشكل", "price": 10000, "badge": "", "icon": "grill"}, {"id": 21, "sec": "mashawi", "ar": "نفر تمن", "en": "نفر تمن", "price": 3000, "badge": "", "icon": "grill"}, {"id": 22, "sec": "aklat", "ar": "صاج دجاج", "en": "صاج دجاج", "price": 2500, "badge": "", "icon": "dish"}, {"id": 23, "sec": "aklat", "ar": "صاج دجاج بالجبن", "en": "صاج دجاج بالجبن", "price": 3000, "badge": "", "icon": "dish"}, {"id": 24, "sec": "aklat", "ar": "صاج فلافل", "en": "صاج فلافل", "price": 1500, "badge": "", "icon": "dish"}, {"id": 25, "sec": "aklat", "ar": "صاج ايطالي", "en": "صاج ايطالي", "price": 4000, "badge": "", "icon": "dish"}, {"id": 26, "sec": "aklat", "ar": "زنجر", "en": "زنجر", "price": 3500, "badge": "", "icon": "dish"}, {"id": 27, "sec": "aklat", "ar": "كص دجاج", "en": "كص دجاج", "price": 2000, "badge": "", "icon": "dish"}, {"id": 28, "sec": "aklat", "ar": "فلافل", "en": "فلافل", "price": 1000, "badge": "", "icon": "dish"}, {"id": 29, "sec": "aklat", "ar": "ريزو دجاج", "en": "ريزو دجاج", "price": 5000, "badge": "", "icon": "dish"}, {"id": 30, "sec": "aklat", "ar": "ريزو شاورما", "en": "ريزو شاورما", "price": 5000, "badge": "", "icon": "dish"}, {"id": 31, "sec": "aklat", "ar": "سكالوب", "en": "سكالوب", "price": 4000, "badge": "", "icon": "dish"}, {"id": 32, "sec": "burger", "ar": "برجر لحم", "en": "برجر لحم", "price": 2500, "badge": "", "icon": "burger"}, {"id": 33, "sec": "burger", "ar": "برجر لحم بالجبن", "en": "برجر لحم بالجبن", "price": 3000, "badge": "", "icon": "burger"}, {"id": 34, "sec": "burger", "ar": "برجر دجاج", "en": "برجر دجاج", "price": 3000, "badge": "", "icon": "burger"}, {"id": 35, "sec": "burger", "ar": "برجر دجاج بالجبن", "en": "برجر دجاج بالجبن", "price": 3500, "badge": "", "icon": "burger"}, {"id": 36, "sec": "burger", "ar": "وجبة برجر لحم", "en": "وجبة برجر لحم", "price": 3500, "badge": "", "icon": "burger"}, {"id": 37, "sec": "burger", "ar": "وجبة برجر دجاج", "en": "وجبة برجر دجاج", "price": 4000, "badge": "", "icon": "burger"}, {"id": 38, "sec": "burger", "ar": "وجبة صاج دجاج", "en": "وجبة صاج دجاج", "price": 4000, "badge": "", "icon": "burger"}, {"id": 39, "sec": "burger", "ar": "وجبة صاج ايطالي", "en": "وجبة صاج ايطالي", "price": 5500, "badge": "", "icon": "burger"}, {"id": 40, "sec": "pizza", "ar": "بيتزا دجاج صغير", "en": "بيتزا دجاج صغير", "price": 5000, "badge": "", "icon": "pizza"}, {"id": 41, "sec": "pizza", "ar": "بيتزا دجاج وسط", "en": "بيتزا دجاج وسط", "price": 8000, "badge": "", "icon": "pizza"}, {"id": 42, "sec": "pizza", "ar": "بيتزا دجاج عائلي", "en": "بيتزا دجاج عائلي", "price": 10000, "badge": "", "icon": "pizza"}, {"id": 43, "sec": "pizza", "ar": "بيتزا مارگريتا صغير", "en": "بيتزا مارگريتا صغير", "price": 4500, "badge": "", "icon": "pizza"}, {"id": 44, "sec": "pizza", "ar": "بيتزا مارگريتا وسط", "en": "بيتزا مارگريتا وسط", "price": 7000, "badge": "", "icon": "pizza"}, {"id": 45, "sec": "pizza", "ar": "بيتزا مارگريتا عائلي", "en": "بيتزا مارگريتا عائلي", "price": 10000, "badge": "", "icon": "pizza"}, {"id": 46, "sec": "pizza", "ar": "بيتزا فطر صغير", "en": "بيتزا فطر صغير", "price": 5000, "badge": "", "icon": "pizza"}, {"id": 47, "sec": "pizza", "ar": "بيتزا فطر وسط", "en": "بيتزا فطر وسط", "price": 8000, "badge": "", "icon": "pizza"}, {"id": 48, "sec": "pizza", "ar": "بيتزا فطر عائلي", "en": "بيتزا فطر عائلي", "price": 10000, "badge": "", "icon": "pizza"}, {"id": 49, "sec": "pizza", "ar": "بيتزا خضار صغير", "en": "بيتزا خضار صغير", "price": 4000, "badge": "", "icon": "pizza"}, {"id": 50, "sec": "pizza", "ar": "بيتزا خضار وسط", "en": "بيتزا خضار وسط", "price": 7000, "badge": "", "icon": "pizza"}, {"id": 51, "sec": "pizza", "ar": "بيتزا خضار عائلي", "en": "بيتزا خضار عائلي", "price": 9000, "badge": "", "icon": "pizza"}, {"id": 52, "sec": "pizza", "ar": "بيتزا مشكل صغير", "en": "بيتزا مشكل صغير", "price": 5000, "badge": "", "icon": "pizza"}, {"id": 53, "sec": "pizza", "ar": "بيتزا مشكل وسط", "en": "بيتزا مشكل وسط", "price": 8000, "badge": "", "icon": "pizza"}, {"id": 54, "sec": "pizza", "ar": "بيتزا مشكل عائلي", "en": "بيتزا مشكل عائلي", "price": 10000, "badge": "", "icon": "pizza"}, {"id": 55, "sec": "finger", "ar": "فنكر", "en": "فنكر", "price": 1000, "badge": "", "icon": "fries"}, {"id": 56, "sec": "finger", "ar": "فنكر بالجبن", "en": "فنكر بالجبن", "price": 1500, "badge": "", "icon": "fries"}, {"id": 57, "sec": "finger", "ar": "طبق فنكر صغير", "en": "طبق فنكر صغير", "price": 2000, "badge": "", "icon": "fries"}, {"id": 58, "sec": "finger", "ar": "طبق فنكر وسط", "en": "طبق فنكر وسط", "price": 3000, "badge": "", "icon": "fries"}, {"id": 59, "sec": "finger", "ar": "طبق فنكر كبير", "en": "طبق فنكر كبير", "price": 5000, "badge": "", "icon": "fries"}, {"id": 60, "sec": "drinks", "ar": "بيبسي دبل", "en": "بيبسي دبل", "price": 1500, "badge": "", "icon": "soda"}, {"id": 61, "sec": "drinks", "ar": "بيبسي", "en": "بيبسي", "price": 500, "badge": "", "icon": "soda"}, {"id": 62, "sec": "drinks", "ar": "سفن دبل", "en": "سفن دبل", "price": 1500, "badge": "", "icon": "soda"}, {"id": 63, "sec": "drinks", "ar": "سفن", "en": "سفن", "price": 500, "badge": "", "icon": "soda"}, {"id": 64, "sec": "drinks", "ar": "ميرندا", "en": "ميرندا", "price": 500, "badge": "", "icon": "soda"}, {"id": 65, "sec": "drinks", "ar": "ديو", "en": "ديو", "price": 500, "badge": "", "icon": "soda"}], OFFERS=[{"id": "o0", "ar": "عرض البرجر دجاج", "en": "عرض البرجر دجاج", "dar": "5 برجر دجاج + طبق فنكر + بطل ببسي عائلي + مقبلات + توصيل مجاني", "den": "5 برجر دجاج + طبق فنكر + بطل ببسي عائلي + مقبلات + توصيل مجاني", "price": 12000, "em": "🔥"}, {"id": "o1", "ar": "عرض الصاج", "en": "عرض الصاج", "dar": "5 صاج دجاج + طبق فنكر + بطل ببسي عائلي + مقبلات + توصيل مجاني", "den": "5 صاج دجاج + طبق فنكر + بطل ببسي عائلي + مقبلات + توصيل مجاني", "price": 12000, "em": "🔥"}, {"id": "o2", "ar": "عرض الشاورما", "en": "عرض الشاورما", "dar": "7 شاورما دجاج + بطل ببسي عائلي + توصيل مجاني", "den": "7 شاورما دجاج + بطل ببسي عائلي + توصيل مجاني", "price": 13000, "em": "🔥"}, {"id": "o3", "ar": "عرض الريزو الأصيل", "en": "عرض الريزو الأصيل", "dar": "ريزو مقرمش + ريزو مكس + ريزو شاورما + بطل ببسي عائلي + توصيل مجاني", "den": "ريزو مقرمش + ريزو مكس + ريزو شاورما + بطل ببسي عائلي + توصيل مجاني", "price": 14000, "em": "🔥"}, {"id": "o4", "ar": "عرض الفلافل", "en": "عرض الفلافل", "dar": "10 فلافل + بطل ببسي عائلي + مقبلات + توصيل مجاني", "den": "10 فلافل + بطل ببسي عائلي + مقبلات + توصيل مجاني", "price": 10000, "em": "🔥"}, {"id": "o5", "ar": "عرض البيتزا", "en": "عرض البيتزا", "dar": "3 بيتزا صغير + بطل ببسي عائلي + مقبلات + توصيل مجاني", "den": "3 بيتزا صغير + بطل ببسي عائلي + مقبلات + توصيل مجاني", "price": 14000, "em": "🔥"}, {"id": "o6", "ar": "العرض العائلي - صاج", "en": "العرض العائلي - صاج", "dar": "4 صاج دجاج + برجر لحم + برجر دجاج + طبق فنكر + بطل ببسي عائلي + توصيل مجاني", "den": "4 صاج دجاج + برجر لحم + برجر دجاج + طبق فنكر + بطل ببسي عائلي + توصيل مجاني", "price": 15000, "em": "🔥"}, {"id": "o7", "ar": "العرض العائلي - بيتزا", "en": "العرض العائلي - بيتزا", "dar": "1 بيتزا صغير + 2 برجر لحم + 2 برجر دجاج + بطل ببسي عائلي + توصيل مجاني", "den": "1 بيتزا صغير + 2 برجر لحم + 2 برجر دجاج + بطل ببسي عائلي + توصيل مجاني", "price": 15000, "em": "🔥"}, {"id": "o8", "ar": "العرض الكبير", "en": "العرض الكبير", "dar": "1 بيتزا عائلي + برجر لحم + برجر دجاج + 2 كص دجاج + 4 فلافل + طبق فنكر + بطل ببسي عائلي + توصيل مجاني", "den": "1 بيتزا عائلي + برجر لحم + برجر دجاج + 2 كص دجاج + 4 فلافل + طبق فنكر + بطل ببسي عائلي + توصيل مجاني", "price": 25000, "em": "🔥"}], ICONS={"grill": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<line x1=\"30\" y1=\"30\" x2=\"70\" y2=\"30\" stroke-width=\"1.8\"/>\n<line x1=\"34\" y1=\"26\" x2=\"34\" y2=\"34\" stroke-width=\"1.5\"/>\n<path d=\"M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z\"/>\n<path d=\"M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z\"/>\n<line x1=\"30\" y1=\"46\" x2=\"70\" y2=\"46\" stroke-width=\"1.8\"/>\n<path d=\"M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z\"/>\n<path d=\"M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z\"/>\n<path d=\"M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10\" stroke-width=\"1.5\"/>\n<ellipse cx=\"50\" cy=\"72\" rx=\"24\" ry=\"4\"/>\n\n</g></svg>", "dish": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<path d=\"M26 60 q0 -22 24 -22 q24 0 24 22 z\"/>\n<circle cx=\"50\" cy=\"34\" r=\"2.5\"/>\n<ellipse cx=\"50\" cy=\"64\" rx=\"30\" ry=\"4\"/>\n<path d=\"M40 26 q-2 -4 0 -7 M50 24 q-2 -4 0 -7 M60 26 q-2 -4 0 -7\" stroke-width=\"1.6\"/>\n\n</g></svg>", "burger": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<path d=\"M30 42 q20 -15 40 0 z\"/>\n<circle cx=\"40\" cy=\"34\" r=\"1\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"50\" cy=\"31\" r=\"1\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"60\" cy=\"34\" r=\"1\" fill=\"url(#goldGrad)\"/>\n<path d=\"M28 46 q4 4 6 0 q4 4 6 0 q4 4 6 0 q4 4 6 0 q4 4 6 0 q4 4 6 0\" stroke-width=\"2\"/>\n<path d=\"M30 52 h40 v4.5 h-40 z\"/>\n<path d=\"M29 61 q3 2.5 5 0 q3 2.5 5 0 q3 2.5 5 0 q3 2.5 5 0 q3 2.5 5 0 q3 2.5 5 0\" stroke-width=\"2\"/>\n<path d=\"M30 68 h40 a4 4 0 0 1 -4 7 h-32 a4 4 0 0 1 -4 -7 z\"/>\n\n</g></svg>", "pizza": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<path d=\"M50 26 l24 42 a27 27 0 0 1 -48 0 z\"/>\n<path d=\"M50 26 v42 M32 68 h36\" stroke-width=\"1.8\"/>\n<path d=\"M26 68 q24 6 48 0\" stroke-width=\"1.8\"/>\n<circle cx=\"44\" cy=\"44\" r=\"3\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"56\" cy=\"50\" r=\"3\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"47\" cy=\"58\" r=\"3\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"50\" cy=\"26\" r=\"2.2\"/>\n\n</g></svg>", "fries": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<path d=\"M34 44 h32 l-4 30 a3 3 0 0 1 -3 3 h-18 a3 3 0 0 1 -3 -3 z\"/>\n<path d=\"M34 44 h32 l-1.5 -7 h-29 z\"/>\n<line x1=\"40\" y1=\"38\" x2=\"38\" y2=\"70\" stroke-width=\"2\"/>\n<line x1=\"46\" y1=\"34\" x2=\"45\" y2=\"72\" stroke-width=\"2\"/>\n<line x1=\"53\" y1=\"35\" x2=\"53\" y2=\"71\" stroke-width=\"2\"/>\n<line x1=\"59\" y1=\"38\" x2=\"61\" y2=\"69\" stroke-width=\"2\"/>\n\n</g></svg>", "soda": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<path d=\"M36 36 h28 l-3 34 a4 4 0 0 1 -4 4 h-14 a4 4 0 0 1 -4 -4 z\"/>\n<ellipse cx=\"50\" cy=\"36\" rx=\"14\" ry=\"3.5\"/>\n<line x1=\"55\" y1=\"34\" x2=\"60\" y2=\"20\" stroke-width=\"2\"/>\n<path d=\"M40 48 h20\" stroke-width=\"1.5\" stroke-dasharray=\"2 3\"/>\n<circle cx=\"45\" cy=\"56\" r=\"1.8\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"55\" cy=\"60\" r=\"1.8\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"48\" cy=\"64\" r=\"1.5\" fill=\"url(#goldGrad)\"/>\n\n</g></svg>", "default": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<path d=\"M34 42 h32 v14 a13 13 0 0 1 -13 13 h-6 a13 13 0 0 1 -13 -13 z\"/>\n<path d=\"M66 46 h4 a5 5 0 0 1 0 10 h-4\"/>\n\n</g></svg>"}, BADGES={"star": ["⭐ مميز", "⭐ Special"], "lux": ["👑 عائلي", "👑 Family"], "new": ["🆕 جديد", "🆕 New"]}, SUGGEST_IDS=[60, 61, 62, 63, 64, 65];
+const ITEMS=[{"id": 22, "sec": "aklat", "ar": "صاج دجاج", "en": "صاج دجاج", "price": 2500, "badge": "", "icon": "dish"}, {"id": 23, "sec": "aklat", "ar": "صاج دجاج بالجبن", "en": "صاج دجاج بالجبن", "price": 3000, "badge": "", "icon": "dish"}, {"id": 24, "sec": "aklat", "ar": "صاج فلافل", "en": "صاج فلافل", "price": 2000, "badge": "", "icon": "dish"}, {"id": 25, "sec": "aklat", "ar": "صاج ايطالي", "en": "صاج ايطالي", "price": 5000, "badge": "", "icon": "dish"}, {"id": 26, "sec": "aklat", "ar": "زنجر", "en": "زنجر", "price": 3500, "badge": "", "icon": "dish"}, {"id": 27, "sec": "aklat", "ar": "كص دجاج", "en": "كص دجاج", "price": 2000, "badge": "", "icon": "dish"}, {"id": 28, "sec": "aklat", "ar": "فلافل", "en": "فلافل", "price": 1000, "badge": "", "icon": "dish"}, {"id": 29, "sec": "aklat", "ar": "ريزو دجاج", "en": "ريزو دجاج", "price": 5000, "badge": "", "icon": "dish"}, {"id": 30, "sec": "aklat", "ar": "ريزو شاورما", "en": "ريزو شاورما", "price": 5000, "badge": "", "icon": "dish"}, {"id": 31, "sec": "aklat", "ar": "سكالوب", "en": "سكالوب", "price": 4000, "badge": "", "icon": "dish"}, {"id": 32, "sec": "burger", "ar": "برجر لحم", "en": "برجر لحم", "price": 2500, "badge": "", "icon": "burger"}, {"id": 33, "sec": "burger", "ar": "برجر لحم بالجبن", "en": "برجر لحم بالجبن", "price": 3000, "badge": "", "icon": "burger"}, {"id": 34, "sec": "burger", "ar": "برجر دجاج", "en": "برجر دجاج", "price": 3000, "badge": "", "icon": "burger"}, {"id": 35, "sec": "burger", "ar": "برجر دجاج بالجبن", "en": "برجر دجاج بالجبن", "price": 3500, "badge": "", "icon": "burger"}, {"id": 36, "sec": "burger", "ar": "وجبة برجر لحم", "en": "وجبة برجر لحم", "price": 4000, "badge": "", "icon": "burger"}, {"id": 37, "sec": "burger", "ar": "وجبة برجر دجاج", "en": "وجبة برجر دجاج", "price": 4500, "badge": "", "icon": "burger"}, {"id": 38, "sec": "burger", "ar": "وجبة صاج دجاج", "en": "وجبة صاج دجاج", "price": 4000, "badge": "", "icon": "burger"}, {"id": 39, "sec": "burger", "ar": "وجبة صاج ايطالي", "en": "وجبة صاج ايطالي", "price": 6500, "badge": "", "icon": "burger"}, {"id": 40, "sec": "pizza", "ar": "بيتزا دجاج صغير", "en": "بيتزا دجاج صغير", "price": 5000, "badge": "", "icon": "pizza"}, {"id": 41, "sec": "pizza", "ar": "بيتزا دجاج وسط", "en": "بيتزا دجاج وسط", "price": 8000, "badge": "", "icon": "pizza"}, {"id": 42, "sec": "pizza", "ar": "بيتزا دجاج عائلي", "en": "بيتزا دجاج عائلي", "price": 10000, "badge": "", "icon": "pizza"}, {"id": 43, "sec": "pizza", "ar": "بيتزا مارگريتا صغير", "en": "بيتزا مارگريتا صغير", "price": 4500, "badge": "", "icon": "pizza"}, {"id": 44, "sec": "pizza", "ar": "بيتزا مارگريتا وسط", "en": "بيتزا مارگريتا وسط", "price": 7000, "badge": "", "icon": "pizza"}, {"id": 45, "sec": "pizza", "ar": "بيتزا مارگريتا عائلي", "en": "بيتزا مارگريتا عائلي", "price": 10000, "badge": "", "icon": "pizza"}, {"id": 46, "sec": "pizza", "ar": "بيتزا فطر صغير", "en": "بيتزا فطر صغير", "price": 5000, "badge": "", "icon": "pizza"}, {"id": 47, "sec": "pizza", "ar": "بيتزا فطر وسط", "en": "بيتزا فطر وسط", "price": 8000, "badge": "", "icon": "pizza"}, {"id": 48, "sec": "pizza", "ar": "بيتزا فطر عائلي", "en": "بيتزا فطر عائلي", "price": 10000, "badge": "", "icon": "pizza"}, {"id": 49, "sec": "pizza", "ar": "بيتزا خضار صغير", "en": "بيتزا خضار صغير", "price": 4000, "badge": "", "icon": "pizza"}, {"id": 50, "sec": "pizza", "ar": "بيتزا خضار وسط", "en": "بيتزا خضار وسط", "price": 7000, "badge": "", "icon": "pizza"}, {"id": 51, "sec": "pizza", "ar": "بيتزا خضار عائلي", "en": "بيتزا خضار عائلي", "price": 10000, "badge": "", "icon": "pizza"}, {"id": 52, "sec": "pizza", "ar": "بيتزا مشكل صغير", "en": "بيتزا مشكل صغير", "price": 5000, "badge": "", "icon": "pizza"}, {"id": 53, "sec": "pizza", "ar": "بيتزا مشكل وسط", "en": "بيتزا مشكل وسط", "price": 8000, "badge": "", "icon": "pizza"}, {"id": 54, "sec": "pizza", "ar": "بيتزا مشكل عائلي", "en": "بيتزا مشكل عائلي", "price": 10000, "badge": "", "icon": "pizza"}, {"id": 55, "sec": "finger", "ar": "فنكر", "en": "فنكر", "price": 1000, "badge": "", "icon": "fries"}, {"id": 56, "sec": "finger", "ar": "فنكر بالجبن", "en": "فنكر بالجبن", "price": 1500, "badge": "", "icon": "fries"}, {"id": 57, "sec": "finger", "ar": "طبق فنكر صغير", "en": "طبق فنكر صغير", "price": 2000, "badge": "", "icon": "fries"}, {"id": 58, "sec": "finger", "ar": "طبق فنكر وسط", "en": "طبق فنكر وسط", "price": 3000, "badge": "", "icon": "fries"}, {"id": 59, "sec": "finger", "ar": "طبق فنكر كبير", "en": "طبق فنكر كبير", "price": 5000, "badge": "", "icon": "fries"}, {"id": 61, "sec": "drinks", "ar": "بيبسي", "en": "بيبسي", "price": 500, "badge": "", "icon": "soda"}, {"id": 63, "sec": "drinks", "ar": "سفن", "en": "سفن", "price": 500, "badge": "", "icon": "soda"}, {"id": 64, "sec": "drinks", "ar": "ميرندا", "en": "ميرندا", "price": 500, "badge": "", "icon": "soda"}, {"id": 65, "sec": "drinks", "ar": "ديو", "en": "ديو", "price": 500, "badge": "", "icon": "soda"}], OFFERS=[{"id": "o0", "ar": "7 لفات كص دجاج", "en": "7 لفات كص دجاج", "dar": "7 لفات كص دجاج + بطل ببسي عائلي + التوصيل مجاني", "den": "7 لفات كص دجاج + بطل ببسي عائلي + التوصيل مجاني", "price": 15000, "em": "🔥"}, {"id": "o1", "ar": "25 قطعة صاج دجاج", "en": "25 قطعة صاج دجاج", "dar": "25 قطعة صاج دجاج مع طبق فنكر + بطل ببسي عائلي + مقبلات + التوصيل مجاني", "den": "25 قطعة صاج دجاج مع طبق فنكر + بطل ببسي عائلي + مقبلات + التوصيل مجاني", "price": 15000, "em": "🔥"}, {"id": "o2", "ar": "5 صاج دجاج + بيتزا صغير + فنكر", "en": "5 صاج دجاج + بيتزا صغير + فنكر", "dar": "5 صاج دجاج + بيتزا صغير + طبق فنكر + ببسي عائلي مجاني + مقبلات مجانية + التوصيل مجاني", "den": "5 صاج دجاج + بيتزا صغير + طبق فنكر + ببسي عائلي مجاني + مقبلات مجانية + التوصيل مجاني", "price": 19000, "em": "🔥"}, {"id": "o3", "ar": "10 لفات فلافل", "en": "10 لفات فلافل", "dar": "10 لفات فلافل + بطل ببسي عائلي + التوصيل مجاني", "den": "10 لفات فلافل + بطل ببسي عائلي + التوصيل مجاني", "price": 10000, "em": "🔥"}, {"id": "o4", "ar": "5 برجر لحم + طبق فنكر", "en": "5 برجر لحم + طبق فنكر", "dar": "5 برجر لحم + طبق فنكر + ببسي عائلي + التوصيل مجاني", "den": "5 برجر لحم + طبق فنكر + ببسي عائلي + التوصيل مجاني", "price": 17000, "em": "🔥"}, {"id": "o5", "ar": "3 بيتزا دجاج + طبق فنكر", "en": "3 بيتزا دجاج + طبق فنكر", "dar": "3 بيتزا دجاج + طبق فنكر + مقبلات + بطل ببسي عائلي + التوصيل مجاني", "den": "3 بيتزا دجاج + طبق فنكر + مقبلات + بطل ببسي عائلي + التوصيل مجاني", "price": 17000, "em": "🔥"}, {"id": "o6", "ar": "ريزو مقرمش + ريزو مكس + برجر + صاج", "en": "ريزو مقرمش + ريزو مكس + برجر + صاج", "dar": "ريزو مقرمش + ريزو مكس + برجر لحم + صاج دجاج مع بطل ببسي عائلي + مقبلات + طبق فنكر + التوصيل مجاني", "den": "ريزو مقرمش + ريزو مكس + برجر لحم + صاج دجاج مع بطل ببسي عائلي + مقبلات + طبق فنكر + التوصيل مجاني", "price": 16000, "em": "🔥"}, {"id": "o7", "ar": "5 برجر لحم + 3 دجاج + طبق فنكر", "en": "5 برجر لحم + 3 دجاج + طبق فنكر", "dar": "5 برجر لحم + 3 دجاج + طبق فنكر + ببسي عائلي مجاني + التوصيل مجاني", "den": "5 برجر لحم + 3 دجاج + طبق فنكر + ببسي عائلي مجاني + التوصيل مجاني", "price": 25000, "em": "🔥"}, {"id": "o8", "ar": "15 قطعة صاج ايطالي", "en": "15 قطعة صاج ايطالي", "dar": "15 قطعة صاج ايطالي + طبق فنكر + بطل ببسي عائلي + التوصيل مجاني", "den": "15 قطعة صاج ايطالي + طبق فنكر + بطل ببسي عائلي + التوصيل مجاني", "price": 18000, "em": "🔥"}, {"id": "o9", "ar": "2 برجر لحم + 2 صاج دجاج + بيتزا صغير", "en": "2 برجر لحم + 2 صاج دجاج + بيتزا صغير", "dar": "2 برجر لحم + 2 صاج دجاج مع بيتزا صغير + بطل ببسي عائلي مجاني + مقبلات مجانية + التوصيل مجاني", "den": "2 برجر لحم + 2 صاج دجاج مع بيتزا صغير + بطل ببسي عائلي مجاني + مقبلات مجانية + التوصيل مجاني", "price": 15000, "em": "🔥"}, {"id": "o10", "ar": "7 لفات كص دجاج + ببسي عائلي", "en": "7 لفات كص دجاج + ببسي عائلي", "dar": "7 لفات كص دجاج + بطل ببسي عائلي + التوصيل مجاني", "den": "7 لفات كص دجاج + بطل ببسي عائلي + التوصيل مجاني", "price": 15000, "em": "🔥"}], ICONS={"grill": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<line x1=\"30\" y1=\"30\" x2=\"70\" y2=\"30\" stroke-width=\"1.8\"/>\n<line x1=\"34\" y1=\"26\" x2=\"34\" y2=\"34\" stroke-width=\"1.5\"/>\n<path d=\"M38 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z\"/>\n<path d=\"M52 26 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z\"/>\n<line x1=\"30\" y1=\"46\" x2=\"70\" y2=\"46\" stroke-width=\"1.8\"/>\n<path d=\"M38 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z\"/>\n<path d=\"M52 42 h10 a4 4 0 0 1 0 8 h-10 a4 4 0 0 1 0 -8z\"/>\n<path d=\"M34 62 q3 -6 0 -10 M44 64 q3 -7 0 -11 M56 62 q3 -6 0 -10 M66 63 q3 -6 0 -10\" stroke-width=\"1.5\"/>\n<ellipse cx=\"50\" cy=\"72\" rx=\"24\" ry=\"4\"/>\n\n</g></svg>", "dish": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<path d=\"M26 60 q0 -22 24 -22 q24 0 24 22 z\"/>\n<circle cx=\"50\" cy=\"34\" r=\"2.5\"/>\n<ellipse cx=\"50\" cy=\"64\" rx=\"30\" ry=\"4\"/>\n<path d=\"M40 26 q-2 -4 0 -7 M50 24 q-2 -4 0 -7 M60 26 q-2 -4 0 -7\" stroke-width=\"1.6\"/>\n\n</g></svg>", "burger": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<path d=\"M30 42 q20 -15 40 0 z\"/>\n<circle cx=\"40\" cy=\"34\" r=\"1\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"50\" cy=\"31\" r=\"1\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"60\" cy=\"34\" r=\"1\" fill=\"url(#goldGrad)\"/>\n<path d=\"M28 46 q4 4 6 0 q4 4 6 0 q4 4 6 0 q4 4 6 0 q4 4 6 0 q4 4 6 0\" stroke-width=\"2\"/>\n<path d=\"M30 52 h40 v4.5 h-40 z\"/>\n<path d=\"M29 61 q3 2.5 5 0 q3 2.5 5 0 q3 2.5 5 0 q3 2.5 5 0 q3 2.5 5 0 q3 2.5 5 0\" stroke-width=\"2\"/>\n<path d=\"M30 68 h40 a4 4 0 0 1 -4 7 h-32 a4 4 0 0 1 -4 -7 z\"/>\n\n</g></svg>", "pizza": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<path d=\"M50 26 l24 42 a27 27 0 0 1 -48 0 z\"/>\n<path d=\"M50 26 v42 M32 68 h36\" stroke-width=\"1.8\"/>\n<path d=\"M26 68 q24 6 48 0\" stroke-width=\"1.8\"/>\n<circle cx=\"44\" cy=\"44\" r=\"3\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"56\" cy=\"50\" r=\"3\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"47\" cy=\"58\" r=\"3\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"50\" cy=\"26\" r=\"2.2\"/>\n\n</g></svg>", "fries": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<path d=\"M34 44 h32 l-4 30 a3 3 0 0 1 -3 3 h-18 a3 3 0 0 1 -3 -3 z\"/>\n<path d=\"M34 44 h32 l-1.5 -7 h-29 z\"/>\n<line x1=\"40\" y1=\"38\" x2=\"38\" y2=\"70\" stroke-width=\"2\"/>\n<line x1=\"46\" y1=\"34\" x2=\"45\" y2=\"72\" stroke-width=\"2\"/>\n<line x1=\"53\" y1=\"35\" x2=\"53\" y2=\"71\" stroke-width=\"2\"/>\n<line x1=\"59\" y1=\"38\" x2=\"61\" y2=\"69\" stroke-width=\"2\"/>\n\n</g></svg>", "soda": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<path d=\"M36 36 h28 l-3 34 a4 4 0 0 1 -4 4 h-14 a4 4 0 0 1 -4 -4 z\"/>\n<ellipse cx=\"50\" cy=\"36\" rx=\"14\" ry=\"3.5\"/>\n<line x1=\"55\" y1=\"34\" x2=\"60\" y2=\"20\" stroke-width=\"2\"/>\n<path d=\"M40 48 h20\" stroke-width=\"1.5\" stroke-dasharray=\"2 3\"/>\n<circle cx=\"45\" cy=\"56\" r=\"1.8\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"55\" cy=\"60\" r=\"1.8\" fill=\"url(#goldGrad)\"/>\n<circle cx=\"48\" cy=\"64\" r=\"1.5\" fill=\"url(#goldGrad)\"/>\n\n</g></svg>", "default": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" class=\"cat-svg\">\n<circle cx=\"50\" cy=\"50\" r=\"48\" fill=\"url(#navyGrad)\" stroke=\"url(#goldGrad)\" stroke-width=\"2.5\"/>\n<g fill=\"none\" stroke=\"url(#goldGrad)\" stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n\n<path d=\"M34 42 h32 v14 a13 13 0 0 1 -13 13 h-6 a13 13 0 0 1 -13 -13 z\"/>\n<path d=\"M66 46 h4 a5 5 0 0 1 0 10 h-4\"/>\n\n</g></svg>"}, BADGES={"star": ["⭐ مميز", "⭐ Special"], "lux": ["👑 عائلي", "👑 Family"], "new": ["🆕 جديد", "🆕 New"]}, SUGGEST_IDS=[61, 63, 64, 65];
 const PHONE1='07854620373';
 let cart={}, lang='ar';
 function fmt(n){return n.toLocaleString(lang==='ar'?'ar-EG':'en-US');}
@@ -1946,7 +1474,7 @@ setInterval(()=>{const fab=document.getElementById('fab');
   if(cartCount()>0){fab.classList.remove('idle-shake');void fab.offsetWidth;fab.classList.add('idle-shake');}},10000);
 
 /* ===== نظام التقييم ===== */
-const RATE_EMAIL='whmy054@gmail.com';
+const RATE_EMAIL='alafiarest65@gmail.com';
 let rating=0;
 const RATE_LABELS={
   ar:['','😞 سيء','😐 مقبول','🙂 جيد','😊 جيد جداً','🤩 ممتاز'],
